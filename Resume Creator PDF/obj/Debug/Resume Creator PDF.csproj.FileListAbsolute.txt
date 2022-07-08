@@ -1,0 +1,14 @@
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\Resume Creator PDF.exe.config
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\Resume Creator PDF.exe
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\Resume Creator PDF.pdb
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.csproj.AssemblyReference.cache
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume_Creator_PDF.firstpage.resources
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume_Creator_PDF.Properties.Resources.resources
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.csproj.GenerateResource.cache
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.csproj.CoreCompileInputs.cache
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.exe
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.pdb
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.csproj.CopyComplete
