@@ -17,6 +17,7 @@ namespace Resume_Creator_PDF
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new firstpage());
+
         }
     }
 }
