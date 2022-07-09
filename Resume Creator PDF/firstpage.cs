@@ -60,20 +60,18 @@ namespace Resume_Creator_PDF
             JSONinput.Text = jsonFile;
             deserealize(JSONinput.Text);
 
-            //if (MessageBox.Show("Generated!") == DialogResult.OK)
-              //  {
-                //    this.Size = new Size(557, 363);
-                //}
+
         }
 
         private void deserealize(string JSONtoPDF)
         {
                 var jsonn = JsonConvert.DeserializeObject<dynamic>(JSONtoPDF);
-                var pdftxt = (jsonn.Name) + "\n" + " " + "\n " + 
-                             (jsonn.Address) + "\n " + " " + "\n" + 
-                             (jsonn.ContactNumber) + "\n" + " " + "\n " + 
-                             (jsonn.EmailAddress) + "\n" + " " + "\n " + ("Objective:" + "" + jsonn.Objective) + "\n" + " " + "\n " + 
-                             ("Education:" + "\n" + " "+ "\n"+ "College:")+ "\n" +
+                var pdftxt = (jsonn.Name) + "\n" +  
+                             (jsonn.Address) + "\n " +
+                             (jsonn.ContactNumber) + "\n" + 
+                             (jsonn.EmailAddress) + "\n" + " " + "\n " + 
+                             ("OBJECTIVE:" + "\n" + jsonn.Objective) + "\n" + " " + "\n " + 
+                             ("EDUCATION:" + "\n" + " "+ "\n"+ "College:")+ "\n" +
                              ("School: " + jsonn.Education[0].College[0].School) + "\n" +
                              ("School Address: " + jsonn.Education[0].College[1].SchoolAddress) + "\n" +
                              ("Course: " + jsonn.Education[0].College[2].Course) + "\n" +
@@ -93,14 +91,14 @@ namespace Resume_Creator_PDF
                              ("School Address: " + jsonn.Education[3].Elementary[1].SchoolAddress) + "\n" +
                              ("Special Program: " + jsonn.Education[3].Elementary[2].SpecialProgram) + "\n" +
                              ("Year: " + jsonn.Education[3].Elementary[3].Year) + "\n" + "" + "\n" +
-                             ("Achievements:") + "\n" +
+                             ("ACHIEVEMENTS:") + "\n" +
                              (jsonn.Achievements[0]) + "\n" +
                              (jsonn.Achievements[1]) + "\n" +
                              (jsonn.Achievements[2]) + "\n" +
                              (jsonn.Achievements[3]) + "\n" +
                              (jsonn.Achievements[4]) + "\n" +
                              (jsonn.Achievements[5]) + "\n" + "" + "\n" +
-                             ("Skills:") + "\n" +
+                             ("SKILLS:") + "\n" +
                              (jsonn.Skills[0]) + "\n" +
                              (jsonn.Skills[1]) + "\n" +
                              (jsonn.Skills[2]) + "\n" +
@@ -114,7 +112,8 @@ namespace Resume_Creator_PDF
             {
                 if (pdff.ShowDialog() == DialogResult.OK)
                 {
-                    iTextSharp.text.Document docss = new iTextSharp.text.Document(PageSize.A4.Rotate());
+                    iTextSharp.text.Document docss = new iTextSharp.text.Document(PageSize.LETTER.Rotate());
+                    MessageBox.Show("Saved!");
                     try
                     {
                         PdfWriter.GetInstance(docss,new FileStream(pdff.FileName, FileMode.Create));
@@ -123,7 +122,7 @@ namespace Resume_Creator_PDF
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("ahah mali");
+                        MessageBox.Show("Try Again!");
                     }
                     finally
                     {

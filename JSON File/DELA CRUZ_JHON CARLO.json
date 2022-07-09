@@ -1,0 +1,70 @@
+{
+	"Name": "JHON CARLO P. DELA CRUZ",
+	"Address": "7A Pag-asa St. Serrano Subd. Marulas, Valenzuela City",
+	"ContactNumber": "+639564054587",
+	"EmailAddress": "jhoncarlodc41603@gmail.com",
+	"Objective": "To apply as an intern that will provide me more opportunities to use my knowledge in the field of Science, Technology, Engineering and Mathematics (STEM) and my skills in planning and critical thinking.",
+	"Education": [
+		{
+			"College": [
+				{ "School": "Polytechnic University of the Philippines" },
+				{ "SchoolAddress": "Sta. Mesa, Manila City" },
+				{ "Course": "Bachelor of Science in Computer Engineering (BSCpE)" },
+				{ "Year": "2021-Present" }
+
+			]
+		},
+
+		{
+			"SeniorHighSchool": [
+
+				{ "School": "Valenzuela National High School" },
+				{ "SchoolAddress": "Marulas, Valenzuela City" },
+				{ "Strand": "Science, Technology, Engineering and Mathematics (STEM)" },
+				{ "Year": "2019-2021" }
+
+			]
+		},
+
+		{
+			"JuniorHighSchool": [
+
+				{ "School": "Valenzuela National High School" },
+				{ "SchoolAddress": "Marulas, Valenzuela City" },
+				{ "SpecialProgram": true },
+				{ "Year": "2015-2019" }
+
+			]
+		},
+
+		{
+			"Elementary": [
+				{ "School": "Serrano Elementary School" },
+				{ "SchoolAddress": "Marulas, Valenzuela City" },
+				{ "SpecialProgram": false },
+				{ "Year": "2009-2015" }
+			]
+
+		}
+
+	],
+
+	"Achievements": [
+		"-President's Lister (1st Year College First Semester)",
+		"-With Honors (Grade 12)",
+		"-With High Honors (Grade 11)",
+		"-With Honors (Grade 10)",
+		"-With Honors (Grade 9)",
+		"-With Honors (Grade 8)"
+	],
+
+
+	"Skills": [
+		"-Excellent in Microsoft Office applications (Word, Excel, Powerpoint, etc.)",
+		"-Good communication Skills",
+		"-Critical Thinking Skills",
+		"-Leadership skills",
+		"-Planning skills"
+	]
+}
+
