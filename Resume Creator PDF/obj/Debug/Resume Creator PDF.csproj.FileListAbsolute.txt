@@ -12,3 +12,6 @@ C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume 
 C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\obj\Debug\Resume Creator PDF.csproj.CopyComplete
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\itextsharp.dll
+C:\Users\Jc\source\repos\Resume Creator PDF\Resume Creator PDF\bin\Debug\itextsharp.xml

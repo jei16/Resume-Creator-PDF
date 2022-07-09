@@ -33,9 +33,7 @@
             this.GeneratePDFbtn = new System.Windows.Forms.Button();
             this.ChooseFilebtn = new System.Windows.Forms.Button();
             this.ChooseFiletxt = new System.Windows.Forms.TextBox();
-            this.Downloadbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.JSONinput = new System.Windows.Forms.RichTextBox();
             this.NameOutput = new System.Windows.Forms.TextBox();
             this.AddressOutput = new System.Windows.Forms.TextBox();
@@ -70,7 +68,7 @@
             // GeneratePDFbtn
             // 
             this.GeneratePDFbtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.GeneratePDFbtn.Location = new System.Drawing.Point(223, 137);
+            this.GeneratePDFbtn.Location = new System.Drawing.Point(204, 24);
             this.GeneratePDFbtn.Name = "GeneratePDFbtn";
             this.GeneratePDFbtn.Size = new System.Drawing.Size(105, 40);
             this.GeneratePDFbtn.TabIndex = 2;
@@ -101,36 +99,14 @@
             this.ChooseFiletxt.TabIndex = 4;
             this.ChooseFiletxt.TextChanged += new System.EventHandler(this.ChooseFiletxt_TextChanged);
             // 
-            // Downloadbtn
-            // 
-            this.Downloadbtn.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Downloadbtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Downloadbtn.Location = new System.Drawing.Point(204, 50);
-            this.Downloadbtn.Name = "Downloadbtn";
-            this.Downloadbtn.Size = new System.Drawing.Size(105, 40);
-            this.Downloadbtn.TabIndex = 5;
-            this.Downloadbtn.Text = "Download";
-            this.Downloadbtn.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.Downloadbtn);
-            this.panel1.Location = new System.Drawing.Point(12, 219);
+            this.panel1.Controls.Add(this.GeneratePDFbtn);
+            this.panel1.Location = new System.Drawing.Point(12, 158);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(517, 93);
             this.panel1.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(85, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(343, 22);
-            this.textBox1.TabIndex = 7;
             // 
             // JSONinput
             // 
@@ -195,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1108, 501);
+            this.ClientSize = new System.Drawing.Size(1108, 515);
             this.Controls.Add(this.Output);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.ObjectiveOutput);
@@ -207,7 +183,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ChooseFiletxt);
             this.Controls.Add(this.ChooseFilebtn);
-            this.Controls.Add(this.GeneratePDFbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -216,7 +191,6 @@
             this.Text = "PDF Generator";
             this.Load += new System.EventHandler(this.firstpage_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,9 +203,7 @@
         private System.Windows.Forms.Button GeneratePDFbtn;
         private System.Windows.Forms.Button ChooseFilebtn;
         private System.Windows.Forms.TextBox ChooseFiletxt;
-        private System.Windows.Forms.Button Downloadbtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox JSONinput;
         private System.Windows.Forms.TextBox NameOutput;
         private System.Windows.Forms.TextBox AddressOutput;

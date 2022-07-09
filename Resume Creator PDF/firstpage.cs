@@ -12,6 +12,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
+using iTextSharp;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace Resume_Creator_PDF
 {
@@ -40,6 +43,7 @@ namespace Resume_Creator_PDF
                 filename = file.FileName;
                 ChooseFiletxt.Text = filename;
                 GeneratePDFbtn.Visible = true;
+                this.Size = new Size(557, 310);
             }
 
         }
@@ -102,20 +106,39 @@ namespace Resume_Creator_PDF
                              (jsonn.Skills[2]) + "\n" +
                              (jsonn.Skills[3]) + "\n" +
                              (jsonn.Skills[4]) + "\n" 
-
                              ;
 
-
-
-
-
-
-
             Output.Text = pdftxt;
+
+            using(SaveFileDialog pdff = new SaveFileDialog() {Filter = "PDF File|*.pdf", ValidateNames = true})
+            {
+                if (pdff.ShowDialog() == DialogResult.OK)
+                {
+                    iTextSharp.text.Document docss = new iTextSharp.text.Document(PageSize.A4.Rotate());
+                    try
+                    {
+                        PdfWriter.GetInstance(docss,new FileStream(pdff.FileName, FileMode.Create));
+                        docss.Open();
+                        docss.Add(new iTextSharp.text.Paragraph(Output.Text));
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("ahah mali");
+                    }
+                    finally
+                    {
+                        docss.Close();
+                    }
+                }
+
+            }
+
                 
         }
 
+        private void Downloadbtn_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
